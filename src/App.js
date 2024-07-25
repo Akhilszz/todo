@@ -1,9 +1,15 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ToDo from './component/ToDo'
 
 function App() {
   return (
-    <ToDo />
+
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<ToDo />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
